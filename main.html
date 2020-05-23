@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Мои подписки</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="inner-page">
+    <header class="inner-header">
+        <div class="container">
+            <nav class="page-navigation">
+                <a href="index.html"><img class="nav-logo" src="img/logo_blue.svg" alt="Логотип"></a>
+                <ul class="page-list">
+                    <li>
+                        <a class="page-link page-link-active">Мои подписки</a>
+                    </li>
+                    <li>
+                        <a href="recomd.html" class="page-link">Рекомендации</a h>
+                    </li>
+                    <li>
+                        <a href="setting.html" class="page-link">Управление подписками</a>
+                    </li>
+                </ul>
+                <div class="profile-section">
+                    Kirill555598@mail.ru
+                    <a href="login.html">(выйти)</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-inner-section">
+        <div class="container">
+            <form class="form-search" method="POST">
+                <input class="search-input" type="text" placeholder="Найти подписку...">
+                <button class="search-button">Найти</button>
+            </form>
+
+            <section class="subs-list">
+                <h2 class="subs-list-title">Истекает срок подписки</h2>
+                <ul class="subs-list-render subs-list-render-allow">
+                </ul>
+            </section>
+
+            <section class="subs-list">
+                <h2 class="subs-list-title">Все подписки</h2>
+                <ul class="subs-list-render subs-list-render-user">
+                    <li class="subs-list-item-add">
+                        <img class="img-subs" src="img/plus.png">
+                        <span class="subs-title">Добавить подписку</span>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="subs-list">
+                <h2 class="subs-list-title">Рекомендации</h2>
+                <ul class="subs-list-render subs-list-render-part">
+                    
+                </ul>
+            </section>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <ul class="footer-list">
+                    <li class="footer-list-item">
+                        <a href="#">Правила</a>
+                    </li>
+                    <li class="footer-list-item">
+                        <a href="#">Контакты</a>
+                    </li>
+                    <li class="footer-list-item">
+                        <a href="#">О нас</a>
+                    </li>
+                    <li class="footer-list-item">
+                        <a href="#">Настройки</a>
+                    </li>
+                    <li class="footer-list-item">
+                        <a href="#">Приватность</a>
+                    </li>
+                </ul>
+                <p class="copytight">© Copyright 2020. All rights reserved. </p>
+            </div>
+        </div>
+    </footer>
+
+    <section class="modal-info">
+        <form action="#" method="POST">
+            <div class="money-subs-column">
+                <p class="money-subs-title">Название</p>
+                <p class="money-subs-cost">Стоимость</p>
+            </div>
+            <p class="money-subs-description">Описание</p>
+            <div>
+                <p class="money-subs-about">Сколько дней до окончании подписки:</p>
+                <p class="money-subs-date-end">10</p>
+            </div>
+            <div class="money-subs-column">
+                <input class="money-subs-btn-del" type="submit" value="Удалить">
+                <a class="money-subs-btn-edit">Редактировать</a>
+            </div>
+        </form>
+        <button class="modal-close modal-close-1 modal-close-map" type="button"><span class="visually-hidden">Закрыть окно</span></button>
+    </section>
+
+    <section class="modal-add">
+        <form class="form-atr" method="POST">
+            
+            <input class="modal-input-rel money-subs-title-input" type="text" placeholder="Название...">
+            <input class="modal-input-rel money-subs-cost-input" type="text" placeholder="Стоимость...">
+            <input class="modal-input-rel money-subs-description-input" type="text" placeholder="Описание...">
+            <div>
+                <p class="money-subs-about">Сколько длится подписка:</p>
+                <input class="modal-input-rel money-subs-date-end-input" type="text" placeholder="31 день...">
+            </div>
+            <div class="money-subs-column">
+                <a class="money-subs-btn-del-2 money-subs-btn-del">Добавить</a>
+                <input class="money-subs-btn-save" type="submit" value="Отменить">
+            </div>
+        </form>
+        <button class="modal-close modal-close-2 modal-close-map" type="button"><span class="visually-hidden">Закрыть окно</span></button>
+    </section>
+
+    <script src="js/data-json.js"></script>
+    <script src="js/render.js"></script>
+</body>
+</html>
